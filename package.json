@@ -1,0 +1,50 @@
+{
+    "name": "@moonwalkingbits/apollo-yaml-configuration-source",
+    "version": "0.1.0",
+    "description": "A YAML file configuration source for Apollo Configuration.",
+    "author": "Martin Pettersson <martin@moonwalkingbits.com>",
+    "license": "MIT",
+    "keywords": [
+        "apollo",
+        "configuration",
+        "config",
+        "yaml",
+        "yml"
+    ],
+    "homepage": "https://github.com/moonwalkingbits/apollo-yaml-configuration-source#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/moonwalkingbits/apollo-yaml-configuration-source.git"
+    },
+    "bugs": {
+        "url": "https://github.com/moonwalkingbits/apollo-yaml-configuration-source/issues"
+    },
+    "type": "module",
+    "exports": {
+        ".": "./index.js"
+    },
+    "types": "index.d.ts",
+    "files": [
+        "index.js",
+        "index.d.ts",
+        "lib/"
+    ],
+    "scripts": {
+        "test": "mocha",
+        "test:typescript": "tsd",
+        "test:cover": "c8 npm test"
+    },
+    "engines": {
+        "node": ">=14.5"
+    },
+    "dependencies": {
+        "@moonwalkingbits/apollo-configuration": "~0.2",
+        "js-yaml": "^3.14.0"
+    },
+    "devDependencies": {
+        "c8": "~7.3",
+        "chai": "~4.2",
+        "mocha": "~8.2",
+        "tsd": "~0.13"
+    }
+}
